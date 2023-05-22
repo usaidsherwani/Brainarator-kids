@@ -1,0 +1,671 @@
+/* merriweather-sans-regular - latin */
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Sans'), local(Merriweather-Sans),
+    url('../fonts/merriweather-sans-v14-latin-regular.woff2') format(('woff2'));
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  background: #e5e5e5;
+  height: 100%;
+}
+
+body > div:first-of-type {
+  height: 100%;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+:focus {
+  outline: none !important;
+}
+a {
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  height: 3px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #555;
+  width: 10px;
+}
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 0px);
+  flex-direction: column;
+  width: 100%;
+  img {
+    margin-bottom: 13px;
+    width: 7%;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.displayPanel {
+  display: block;
+  height: calc(100% - 35px);
+}
+.hidePanel {
+  display: none;
+}
+.crossIcon {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+// CSS for Loader
+.block-ui {
+  position: relative;
+  min-height: 3em;
+  z-index: 0;
+}
+.block-ui-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1010;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  min-height: 6em;
+  cursor: wait;
+  overflow: hidden;
+}
+.block-ui-container:focus {
+  outline: none;
+}
+.block-ui-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-color: white;
+}
+.block-ui-message-container {
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+  z-index: 10001;
+}
+
+._loading_overlay_overlay {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  opacity: 0.5 !important;
+}
+.loaderblock {
+  width: 100%;
+  height: 100%;
+}
+
+// END of CSS for Loader
+.sb-avatar__text {
+  width: 30px !important;
+  height: 30px !important;
+}
+.sb-avatar__text span {
+  font-size: 12px;
+  padding-left: 0;
+  padding: 0;
+}
+#terminalCol {
+  overflow: hidden !important;
+}
+.xterm .xterm-screen canvas {
+  height: 97% !important;
+}
+.dropdown {
+  text-align: right;
+  @media only screen and (max-width: 768px) {
+    text-align: left;
+  }
+}
+.dropdown-menu {
+  border: 0px;
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 16%);
+  inset: unset !important;
+  transform: none !important;
+  right: 0 !important;
+}
+.dropDownItems {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #888;
+  font-size: 12px;
+  font-weight: bold;
+}
+.ellipsisIcon {
+  color: #333;
+}
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.dropdown-item.disabled,
+.dropdown-item:disabled {
+  color: #adb5bd;
+  background-color: #e1e3e4;
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.pageInnerContainer {
+  height: calc(100% - 65px);
+  overflow: auto;
+  position: relative;
+  top: 65px;
+}
+.css-1hwfws3 {
+  background: #f5f5f5 !important;
+  border: 1px solid #e3e3e3 !important;
+  border-radius: 0 !important;
+  height: 48px !important;
+  width: 100% !important;
+  padding: 10px 20px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+.css-1wy0on6 {
+  background: #f5f5f5 !important;
+  border: 1px solid #e3e3e3 !important;
+  border-radius: 1px !important;
+  height: 48px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  border-left: none;
+}
+.css-1okebmr-indicatorSeparator {
+  display: none;
+}
+.css-yk16xz-control {
+  border: none !important;
+}
+.css-1uccc91-singleValue {
+  top: 50% !important;
+}
+.pointsField {
+  font-size: 11px;
+  float: right;
+  img {
+    width: 14px;
+    margin-left: 2px;
+    margin-right: 3px;
+  }
+}
+
+/** BADGE CSS**/
+.badges {
+  padding: 50px 0;
+  @media only screen and (max-width: 575px) {
+    padding: 50px 30px;
+  }
+  .media {
+    margin: 0 auto;
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-bottom: none;
+    background: #fff;
+    cursor: pointer;
+    @media only screen and (max-width: 575px) {
+      display: block;
+      width: auto;
+    }
+  }
+  .media-body {
+    margin-left: 10px;
+  }
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .progress {
+    background: #ccc;
+    margin: 3px 0;
+    height: 10px;
+    font-size: 8px;
+  }
+  .progress-bar-animated {
+    background-color: #1447a6;
+  }
+}
+.media:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.media:last-child {
+  border-radius: 0 0 10px 10px;
+  border-bottom: 1px solid #ccc;
+}
+.noBilling {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.profileBtn {
+  padding-left: 100px;
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+    padding-left: inherit;
+    padding-left: 30px;
+  }
+}
+
+.shareBtn {
+  .badgeRadius {
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+  strong {
+    margin-right: 20px;
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.userBanner {
+  background: #0071b326;
+  padding: 8px 100px;
+  position: fixed !important;
+  display: flex;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+}
+.bannerNavbar {
+  padding-top: 64px;
+  height: 100%;
+}
+.topNavbar {
+  height: 100%;
+}
+.alertText span {
+  padding: 0 !important;
+  color: #333;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+.mobileBanner {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .userBanner {
+    background: #0071b326;
+    padding: 20px;
+    position: fixed !important;
+    z-index: 4;
+  }
+  .alertText span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .activateBanner {
+    display: none;
+  }
+  .mobileBanner {
+    display: block;
+  }
+}
+.icon-book:before {
+  font-size: 15px;
+  vertical-align: middle;
+}
+.icon-play-circle-o:before {
+  font-size: 15px;
+  vertical-align: middle;
+}
+.arrowIcon {
+  font-size: 15px;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.icon-bullhorn {
+  vertical-align: -2px;
+}
+.createScenarioWrapper {
+  height: calc(100% - 0px) !important;
+  padding: 15px 0;
+  .fileExplorer {
+    height: calc(100% - 0px);
+    overflow-y: hidden;
+    border-bottom: none;
+  }
+}
+
+.leftArrow {
+  font-size: 18px;
+  color: rgb(98, 98, 98);
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    transition: 0.3s;
+  }
+}
+.backBtn {
+  cursor: pointer;
+  font-style: normal;
+  padding-left: 5px;
+  font-size: 16px;
+  @media only screen and (max-width: 575px) {
+    font-size: 12px;
+  }
+}
+.icon-arrow-left:before {
+  vertical-align: -3px;
+}
+
+.learningTabs {
+  float: right;
+  @media only screen and (max-width: 480px) {
+    float: none;
+  }
+  li {
+    display: inline;
+    font-size: 14px;
+    color: #333;
+    padding: 0 4px;
+    cursor: pointer;
+    padding: 0;
+    @media only screen and (max-width: 480px) {
+      font-size: 10px;
+      padding: 0px;
+    }
+  }
+  .active {
+    text-decoration: underline;
+  }
+}
+.table {
+  padding: 25px 20px 0px;
+  margin-bottom: 0px;
+  background-color: rgb(255, 255, 255);
+  thead th {
+    border-bottom: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #333;
+    text-transform: uppercase;
+    border-top: none;
+    cursor: pointer;
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+  td {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    border-top: none;
+    border-top: 1px solid #dee2e6 !important;
+    padding: 10px 15px;
+    width: 17%;
+    text-transform: capitalize;
+    vertical-align: middle;
+  }
+}
+.icon-github:before {
+  content: 'M';
+  padding-right: 5px;
+  vertical-align: -2px;
+  font-size: 16px;
+}
+
+input[type='checkbox'] {
+  width: auto;
+  height: auto;
+}
+
+.check {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+
+.check:after {
+  content: '×';
+  display: block;
+  background: white;
+  background-image: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-21-32.png);
+  pointer-events: none;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  color: transparent;
+  transition: 0.25s all ease-in-out;
+  border-radius: 1px;
+  line-height: 15px;
+  background-position: 0 15px;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1447a6;
+  cursor: pointer;
+}
+.check:checked:after {
+  background-color: #fff;
+  background-position: 0 0;
+}
+.check:hover:after {
+  border: 2px dashed #1447a6;
+}
+.noFoundData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 100px);
+  width: 100%;
+}
+.disabledLink {
+  cursor: not-allowed !important;
+  color: #999 !important;
+  pointer-events: none !important;
+}
+.notCollab {
+  height: 430px;
+}
+.indiana-scroll-container {
+  width: 100%;
+}
+.css-1fhf3k1-control {
+  border-color: transparent !important;
+  border-radius: 2px !important;
+}
+
+.css-g1d714-ValueContainer {
+  height: 44px !important;
+}
+
+#gradient {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 400px) {
+  input,
+  select {
+    width: 120px;
+  }
+} */
+
+#messageContainer {
+  visibility: hidden;
+  color: white;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  #message {
+    min-width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 71%;
+    margin-left: -150px;
+    margin-top: -150px;
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  input {
+    padding: 0;
+    background: #21c466;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+  }
+}
+.blockly-wrap {
+  display: flex;
+  height: 100%;
+}
+
+.blockly-conatiner {
+  // background: #8d6ca6;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 50%;
+  height: calc(100% - 56px);
+  margin: 16px;
+  padding: 12px;
+  box-sizing: content-box;
+}
+
+.blockly-canvas {
+  height: calc(100% - 53px);
+}
+
+.blockly-button-block {
+  text-align: center;
+  margin-bottom: 12px;
+
+  & > * {
+    margin: 0 6px;
+  }
+}
+
+.maze-select,
+.maze-input {
+  padding: 0;
+  background: transparent;
+  border: 2px solid #21c466;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: bold;
+  border-radius: 4px;
+  border-radius: 4px;
+  color: #21c466;
+  text-transform: uppercase;
+  display: inline-block;
+  max-width: 160px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+
+.maze-view {
+  height: calc(100% - 53px);
+}
+
+.maze-container {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.maze-canvas {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #1447a6;
+}
